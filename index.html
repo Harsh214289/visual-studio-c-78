@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title> Class C 78 </title>
+</head>
+<body>
+    <p> My Array </p>
+    <p id= "f">  </p>
+    <p> 1st item on array </p>
+    <p id="1st">  </p>
+    <p id="3rd">  </p>
+    <p> Length of array </p>
+    <p id="lenarr">  </p>
+    <p> looping f array </p>
+    <p id="loop">  </p>
+    <p> New Item</p>
+    <p id="new">  </p>
+    <p> NEW ARRAY</p>
+    <p id="array_new">  </p>
+    <p> SORTED ARRAY</p>
+    <p id="array_sort">  </p>
+    <p> REVERSED ARRAY</p>
+    <p id="array_reverse">  </p>
+</body>
+<script>
+    var fruits=["Apple" , "Mango" , "Watermelon"];
+    console.log (fruits);
+    document.getElementById("f").innerHTML=fruits;
+    document.getElementById("1st").innerHTML=fruits[0];
+    document.getElementById("3rd").innerHTML=fruits[2];
+    document.getElementById("lenarr").innerHTML=fruits.length;
+    var array_value= "";
+    for (i=0; i<fruits.length; i++)
+    {
+        array_value=array_value+fruits[i]+"<br>";
+        document.getElementById("loop").innerHTML=array_value;
+
+    }
+    fruits.push("Pear");
+    document.getElementById("new").innerHTML=fruits;
+    var letters=["H","A","R","S"];
+    document.getElementById("array_new").innerHTML=letters;
+    letters.sort();
+    document.getElementById("array_sort").innerHTML=letters;
+    letters.reverse();
+    document.getElementById("array_reverse").innerHTML=letters;
+</script>
+</html>
